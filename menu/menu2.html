@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>08 SubMenu top fix</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+		
+		.badboy {
+			width  : 0;
+			height : 0;
+			clear  : both;
+		}
+
+		nav.menu {
+			margin-top   : 10px;
+			padding-left: 30px;
+			background  :#123;
+		}
+
+		nav.menu menu {
+			list-style-type : none;
+		}
+
+		nav.menu li {
+			float        : right;
+			position     : relative;
+			border-left  : 1px solid white;
+		}
+
+		nav.menu li:hover {
+			background  : #223;
+
+		}
+		nav.menu li:hover >a{
+			color: #fff99d;
+		}
+
+		nav.menu > menu > li:first-child {
+			border-left : none;
+
+		}
+
+		nav.menu a {
+			color       : white;
+			display     : block;
+			padding     : 5px 14px;
+			font-family : "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+			font-size   : 17px;
+			text-transform  : capitalize;
+			text-decoration : none;
+			white-space     : nowrap;
+			text-align: center;
+
+		}
+
+		nav.menu li menu {
+			min-width : 100%;
+			position  : absolute;
+			right     : 0;
+			top       : 100%;
+			display   : none;
+		}
+
+		nav.menu li:hover menu{
+			display   : block;
+		}
+
+		nav.menu li li {
+			float       : none;
+			background  : #123;
+			border      : none;
+			border-top  : 1px solid white;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="menu">
+		<menu>
+			<li><a href="#">در باره سازمان</a>
+				<menu>
+					<li><a href="#">مدیران سازمان</a></li>
+					<li><a href="#">هیآت امنا</a></li>
+					<li><a href="#">ارکان و تشکیلات</a></li>
+					<li><a href="#">معرفی سازمان ها</a></li>
+					<li><a href="#">موسسات و شرکت های وابسته</a></li>
+				</menu>
+			</li>
+			<li><a href="#">خدمات</a>
+				<menu>
+					<li><a href="#">بیمه شدگان</a></li>
+					<li><a href="#">کارفرمایان</a></li>
+					<li><a href="#">درمانی ها</a></li>
+					<li><a href="#">مدیزان</a></li>
+					<li><a href="#">کارکنان</a></li>
+					<li><a href="#">کارگرهای رسمی</a></li>
+				</menu>	
+			</li>
+			<li><a href="#">قوانین</a>
+				<menu>
+					<li><a href="#">قوانین</a></li>
+					<li><a href="#">بخشنامه</a></li>
+					<li><a href="#">آیین نامه های بیمه ای</a></li>
+					<li><a href="#">آیین نامه های درمانی</a></li>
+				</menu>
+			</li>
+			<li><a href="#">اخبار</a>
+				<menu>
+					<li><a href="#">بیمه ای</a></li>
+					<li><a href="#">درمانی</a></li>
+					<li><a href="#">فناوری اطلاعات</a></li>
+					<li><a href="#">استان ها</a></li>
+					<li><a href="#">اداری و مالی</a></li>
+					<li><a href="#">انتصابات</a></li>
+				</menu>
+			</li>
+			<li><a href="#">گالری تصاویر</a>
+				<menu>
+					<li><a href="#">فیلم</a></li>
+					<li><a href="#">فایل صوتی</a></li>
+					<li><a href="#">بایگانی تصاویر</a></li>
+				</menu>
+			</li>
+			<li><a href="#">روابط عمومی</a>
+				<menu>
+					<li><a href="#">امور بین الملل</a></li>
+					<li><a href="#">امور فرهنگی</a></li>
+					<li><a href="#">آمزش مجازی</a></li>
+					<li><a href="#">انتشارات</a></li>
+					<li><a href="#">پوسترهای اطلاع رساتی</a></li>
+				</menu>
+			</li>
+				<a href="#">
+				<FORM action="form-action.asp">
+				عضویت :  <input type="text" name="عضویت" /></a>
+			</FORM>
+		
+		</menu>
+		<nav class="badboy"></nav>
+	</nav>
+</body>
+</html>

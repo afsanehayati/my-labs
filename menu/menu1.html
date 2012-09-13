@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+
+		.badboy {
+			width  : 0;
+			height : 0;
+			clear  : both;
+		}
+
+		nav.top {
+			margin-left : 150px;
+			margin-top  : 35px;
+		}
+
+		nav.top menu {
+			list-style-type : none;
+		}
+
+		nav.top li {
+			float       : left;
+			position    : relative;
+			margin-left : 20px;
+			background  : #00ACEE;
+
+		}
+
+		nav.top li:first-child {
+			margin-left : none;
+		}
+
+		nav.top li:hover {
+			top : 4px;
+			text-shadow: 0px 0px 1px #FF9;
+		}
+
+		nav.top a {
+			color       : white;
+			display     : block;
+			padding     : 50px 7px 6px;
+			font-family : "Courier New", Courier, monospace;
+			font-size   : 24px;
+			font-weight : bold;
+			letter-spacing  : -1px;
+			text-transform  : capitalize;
+			text-decoration : none;
+		}
+
+		nav.top .triangle {
+			position : absolute;
+			border   : solid transparent;
+			border-top-color : #00ACEE;
+		}
+
+		nav.top .triangle.left {
+			right : 100%;
+			top   : 0;
+			border-width     : 84px 0 0 3px;
+		}
+
+		nav.top .triangle.right {
+			left : 100%;
+			top  : 0;
+			border-width     : 84px 4px 0 0;
+		}
+
+		nav.top .triangle.bottom {
+			left : 10px;
+			top  : 100%;
+			border-width     : 10px 4px 0 9px;
+		}
+	</style>
+</head>
+<body>
+	<header class="main">
+		<nav class="top">
+			<menu>
+				<li>
+					<a href="#">
+						info?
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						products*
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						works°
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						login!
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						contact❜
+						<span class="triangle left"></span>
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+			</menu>
+			<span class="badboy"></span>
+		</nav>
+	</header>
+</body>
+</html>
