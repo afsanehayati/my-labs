@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>09 More Then One Host - Ali.MD CSS Page Layouts</title>
+<style type="text/css">
+<!--
+*{
+	padding :0;
+	margin  :0;
+}
+body{
+	background :#F4F4F4;
+}
+div.container{
+	width  :960px;
+	margin :10px auto;
+	
+}
+
+.badboy{
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
+}
+
+div.floor1,
+div.floor2,
+div.floor3{
+	
+	margin-top :30px;
+	padding-top: 1px;
+}
+
+/* Party at floor 1
+-------------------------------------------------- */
+div.floor1 div.host1{
+	float      :left;
+	width      :500px;
+	min-height :50px;
+	margin-top :50px;
+}
+
+div.floor1 div.host2{
+	float      :right;
+	width      :410px;
+	min-height :50px;
+	margin-top :50px;
+   
+}
+
+div.floor1 div.guest{
+	margin  :0 412px; /* left and right */
+	min-height :136px;
+	margin-top :10px;
+	background-image: url('images/logo.png');
+	background-position: 0px 0px;
+}
+
+div.floor1 div.guest:hover{
+	background-position: 0px -135px;
+}
+
+/* Party at floor 2
+-------------------------------------------------- */
+div.floor2 div.host1{
+	margin-top: 28px;
+	float      :left;
+	width      :465px;
+	min-height :400px;
+	background-image: url('images/welcome_title_full.png');
+	background-repeat: no-repeat;
+
+}
+
+div.floor2 div.host2{
+	float       :left;
+	width       :380px;
+	min-height  :382px;
+	margin-left :98px;
+	
+}
+
+
+
+/* Party at floor 3
+-------------------------------------------------- */
+div.floor3 div.host1
+{
+	border-top: 1px solid #b4b4b4;
+	width        :950px;
+	min-height   :180px;
+	margin-right :5px;
+	
+}
+
+div.floor3 div.host1 li.left{
+	background-image: url('images/award_01.png');
+	margin-left: 180px;
+	width: 278px;
+	min-height: 59px;
+	margin-top: 40px;
+}
+div.floor3 div.host1 li.right{
+	background-image: url('images/Label_SFC_fr.jpg');
+	margin-left: 32px;
+	width: 140px;
+	min-height: 59px;
+	margin-top: 40px;
+}
+div.floor3 div.host1 li.raw1{
+	background-image: url('images/fb_icon.png');
+	margin-top: 142px;
+	margin-left: -325px;
+	width: 25px;
+	min-height: 26px;
+	
+}
+div.floor3 div.host1 li.raw1:hover{
+	background-position: 0px -26px;
+}
+div.floor3 div.host1 li.raw2{
+	background-image: url('images/twitter_icon.png');
+	margin-top: 142px;
+	margin-left: -292px;
+	width: 26px;
+	min-height: 26px;
+	
+}
+div.floor3 div.host1 li.raw2:hover{
+	background-position: 0px -26px;
+}
+div.floor3 div.host1 li.raw3{
+	background-image: url('images/rss_icon.png');
+	margin-top: 142px;
+	margin-left: -259px;
+	width: 25px;
+	min-height: 26px;
+	
+}
+div.floor3 div.host1 li.raw3:hover{
+	background-position: 0px -26px;
+}
+div.floor3 div.host1 li.raw4{
+	background-image: url('images/contact_icon.png');
+	margin-top: 142px;
+	margin-left: -226px;
+	width: 25px;
+	min-height: 26px;
+	
+}
+div.floor3 div.host1 li.raw4:hover{
+	background-position: 0px -26px;
+}
+div.floor3 div.host1 li.raw5{
+	background-image: url('images/body_and_soul_btn.png');
+	margin-top: 142px;
+	margin-left: -185px;
+	width: 89px;
+	min-height: 23px;
+	
+}
+div.floor3 div.host1 li.raw5:hover{
+	background-position: 0px -23px;
+}
+div.floor3 div.host1 li.raw6{
+	background-image: url('images/lottery_btn.png');
+	margin-top: 132px;
+	margin-left: -79px;
+	width: 62px;
+	min-height: 40px;
+	
+}
+div.floor3 div.host1 li.raw6:hover{
+	background-position: 0px -40px;
+}
+
+div.host1 ul{
+	list-style-type: none;
+}
+div.host1 li{
+	float: left;
+}
+div.host1 a{
+	color: gray;
+	display: block;
+	padding: 10px 30px 10px 0;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 17px;
+	margin-right: 26px;
+	font-family:"HouschkaRounded-Medium";
+}
+div.host1 a:hover{
+	color:black;
+}
+div.host2{
+
+}
+div.host2 ul{
+	list-style-type: none;
+}
+div.host2 li{
+	float: left;
+}
+div.host2 a{
+	color: gray;
+	display: block;
+	padding: 12px 21px 10px 0;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 17px;
+	font-family:"HouschkaRounded-Medium";
+	margin-left: 50px;
+}
+div.host2 a:hover{
+	color:black;
+}
+div.floor2 div.host1 p{
+	 font-family:"HouschkaRounded-Medium";
+	font-size: 17px;
+	color: gray;
+	margin-top: 100px;
+}
+div.floor2 div.host1 h2{
+	margin-top: 40px;
+	text-transform: capitalize;
+	background: #ffdd00;
+	color: #999;
+	 font-family:"HouschkaRounded-Medium";
+	width: 375px;
+	 min-height: 40px;
+}
+div.floor2 div.host1 h2:hover{
+	color: black;
+}
+div.floor2 div.host1 h2 a{
+	font-size: 20px;
+	margin-left: 6px;
+}
+div.floor2 div.host2 {
+	width: 378px;
+	height: 444px;
+	float: left;
+	background-image: url('images/art1.jpg');
+	background-repeat: no-repeat;
+
+}
+
+-->
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="floor1">
+		<div class="host1">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">journey so far</a></li>
+				<li><a href="#"> undefeated</a></li>
+			</ul>
+		</div>
+		<div class="host2">
+			<ul>
+				<li><a href="#">be lnvolved</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">abouy us</a></li>
+			</ul>
+		</div>
+		<div class="guest"></div>
+		<div class="badboy"></div>
+	</div>
+	<div class="floor2">
+		<div class="host1">
+			<p>‘Life in my Shoes’ is a powerful multi-platform campaign that </br>
+			challenges the fear and misunderstanding that surrounds HIV.</br>
+			</br>
+			</br>
+			Whether you join us for the whole journey, a mile or just a </br>moment, you will be part of a community coming together to</br> better understand each other,creating better empathy.
+		</p>
+		<h2><a> watch the trailer 'undefeated'<img src="images/video_play_icon.png"></a></h2>
+		</div>
+
+		<div class="host2"><img src="images/cast.png"></div>
+		<div class="badboy"></div>
+	</div>
+	<div class="floor3">
+		<div class="host1">
+			<ul>
+				<li class="left"></li>
+				<li class="right"></li>
+			</ul>
+			<ul>
+				<li class="raw1"></li>
+				<li class="raw2"></li>
+				<li class="raw3"></li>
+				<li class="raw4"></li>
+				<li class="raw5"></li>
+				<li class="raw6"></li>
+			</ul>
+		</div>
+		<div class="badboy"></div>
+	</div>
+</div>
+</body>
+</html>
