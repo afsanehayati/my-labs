@@ -1,0 +1,93 @@
+body{
+	padding-top: 30px;
+}
+.container{
+	outline : 2px dotted rgba(0,0,255,0.8);
+	margin:0 auto;
+	width: 950px;
+	padding: 5px 5px;
+}
+header{
+	outline : 2px dotted rgba(255,0,0,0.8);
+	min-height: 23px;
+}
+section.top{
+	margin-top: 5px;
+	min-height: 14px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+section.box1{
+	margin-top: 15px;
+	min-height: 50px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+div.home{
+	margin: 0 10px;
+	min-height: 330px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+div.home1{
+	margin: 30px 20px 10px;
+	min-height: 15px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+div.home2{
+	margin: 0 10px;
+	min-height: 255px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+div.home3{
+	margin: 50px 10px;
+	min-height: 100px;
+	outline : 2px dotted rgba(0,255,0,0.8);
+}
+section.guest1{
+	margin-top: 10px;
+	min-height: 300px;
+	border:1px solid black;
+}
+section.guest2{
+	margin-top: 10px;
+	min-height: 300px;
+	border:1px solid black;
+	margin-left: 20px;
+}
+section.guest3{
+	margin-top: 10px;
+	min-height: 237px;
+	border:1px solid black;
+	
+}
+section.guest4{
+	margin-top: 10px;
+	border:1px solid black;
+	min-height: 237px;
+}
+div.floor1{
+	min-height:80px;
+ 	outline : 2px dotted rgba(255,0,0,0.8);
+ 	margin-top: 10px;
+}
+div.floor2{
+	min-height: 700px;
+	outline : 2px dotted rgba(255,0,0,0.8);
+	margin-top: 10px;
+}
+div.floor3{
+	min-height: 300px;
+	outline : 2px dotted rgba(255,0,0,0.8);
+	margin-top: 10px;
+}
+div.backimg {
+	background-image: url('images/backimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+}
+
